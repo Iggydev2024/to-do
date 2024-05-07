@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=MuseoModerno&display=swap");
+body {
+    background-color: coral;
+    padding: 1rem;
+    /*1 rem is equal to 16px and is short for root-em*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #394943;
+    box-sizing: border-box;
+    /*Box sizing allows you to include padding and border to an element's width and height(are usually excluded making the element appear bigger than normal) The default is content box where the border box grows bigger to make room for the padding and margin*/
+    font-family: "Gochi Hand", "MuseoModerno" cursive;
+    font-size: medium;
+}
+@media only screen and (min-width: 500px) {
+    body{
+        min-height: 100vh;
+    /*vh is viewport height of device screen; 100vh is equal to 100%*/
+    }
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    background: #f1f5f8;
+    background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+    box-shadow: 5px 4px 7px 3px #00000040;
+    box-sizing: border-box;
+    background-size: 25px 25px;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.heading{
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    display: flex;
+
+}
+.heading_img{
+    width: 25%;
+    align-items: center;
+}
+
+.heading_title{
+    transform: rotate(3dg);
+    padding: 0.2rem, 1rem;
+    margin-left: 10px;
+    font-size: 2rem;
+    background-color: rgba( 200, 90, 130, 0.6);
+}
+
+.form_label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+
+}
+.form_input{
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 0.8rem;
+    font-family: "Gochi-Hand" , cursive;
+    margin-bottom: 15px;
+    color: rgba( 80, 10, 80, 0.9);
+    border: solid 4px transparent;
+    border-bottom: dashed 2px black;
+}
+
+.form_input:focus {
+    outline: none;
+}
+
+.button{
+    padding: 0;
+    border: 2px solid rgb(178, 54, 95);
+    transform: rotate(4deg);
+    /* transform: rotate, skew, or scale change the element into 2D or 3D dimensions.
+    rotate: x axis or Y axis or Z axis(for 3D elements) 
+rotate(angle)- Defines a 2D rotation, the angle is specified in the parameter	
+rotate3d(x,y,z,angle)- Defines a 3D rotation	
+rotateX(angle)- Defines a 3D rotation along the X-axis	
+rotateY(angle)- Defines a 3D rotation along the Y-axis	
+rotateZ(angle)- Defines a 3D rotation along the Z-axis*/
+    transform-origin: center center;
+    font-family: "Gochi Hand", "MuseoModerno" cursive;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    box-shadow:0 2px rgb(178, 54, 95);
+    transition: all 0.3s;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    background-color: rgba(227, 233, 233, 0.9)
+}
+.button:active, .button:focus {
+    transform: translateY(4px);
+    padding-bottom: 0px;
+    outline: 0;
+}
+.toDoList {
+    text-align: left;
+}
+.toDoList li {
+    position: relative;
+    padding: 0.7rem;
+}
+.toDoList li:hover {
+    text-decoration: line-through wavy;
+}
