@@ -86,6 +86,7 @@ rotateY(angle)- Defines a 3D rotation along the Y-axis
 rotateZ(angle)- Defines a 3D rotation along the Z-axis*/
     transform-origin: center center;
     font-family: "Gochi Hand", "MuseoModerno" cursive;
+    font-weight: bold;
     padding-bottom: 4px;
     border-radius: 5px;
     box-shadow:0 2px rgb(178, 54, 95);
